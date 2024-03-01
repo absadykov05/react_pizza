@@ -1,0 +1,11 @@
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    flex-direction: column;
+}
+
+.main div {
+    font-size: large;
+}

@@ -1,0 +1,161 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5%;
+  margin-top: 20px;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.main div span {
+  margin-top: 5px;
+  margin-left: 363px; //дело вкуса
+  line-height: 38px;
+  cursor: pointer;
+}
+
+.ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  margin-top: 25px;
+}
+
+.list {
+  display: grid;
+  grid-template-columns: 100px 200px 120px 160px 1fr;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 5px;
+  width: 40%;
+  font-size: larger;
+
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.deleteButton {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #000;
+  border-radius: 15px;
+  cursor: pointer;
+
+  display: flex;
+  align-content: center;
+  justify-content: center;
+
+  &:hover {
+    background-color: #000;
+    color: white;
+  }
+
+  &:active {
+    transform: translateY(1px);
+  }
+}
+
+.countButtons {
+  width: 350px;
+  display: flex;
+  align-items: center;
+}
+
+.count {
+  margin-left: 15px;
+}
+
+.addPizzaButton {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #FE5F1EFF;
+  color: #fe5f1e;
+  border-radius: 15px;
+  cursor: pointer;
+
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  line-height: 28px;
+  margin-left: 15px;
+
+  &:hover {
+    background-color: #FE5F1EFF;
+    color: white;
+  }
+
+  &:active {
+    transform: translateY(1px);
+  }
+
+  &:disabled {
+    background-color: #7b7b7b;
+  }
+}
+
+.addPizzaButton_disabled {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #7b7b7b;
+  color: #7b7b7b;
+  border-radius: 15px;
+  cursor: pointer;
+
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  line-height: 28px;
+  margin-left: 15px;
+
+
+}
+
+.bottomPart {
+  display: flex;
+  flex-direction: row;
+  width: 600px;
+  font-size: large;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 10px;
+}
+
+
+.line {
+  width: 625px;
+  height: 0.7px;
+  background-color: #D6CEC3;
+  margin-top: 10px;
+  @media(max-width: 1280px) {
+    width: 625px;
+  }
+  @media(max-width: 1010px) {
+    width: 620px;
+  }
+}
+
+.link {
+  width: 200px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #C7C7CC;
+  color: #BDBEC2;
+  border-radius: 20px;
+
+  margin-top: 30px;
+  margin-bottom: 25px;
+
+  &:hover {
+    background-color: #fe5f1e;
+    border: #fe5f1e;
+    color: white;
+  }
+}

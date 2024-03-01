@@ -1,0 +1,21 @@
+  Когда мы используем РеактРоутер, то страница не перерисовывается, а поскольку для обновление window.location.pathname
+нужна перерисовка, данные остаются старыми. Это и причина, по которой не стоит злоупотреблять этим источником.
+
+22.07.2022  #19
+  window.location и useLocation() не одно и то же. Window имеет больше данных, хотя во многом они бесполезны, когда как
+useLocation() имеет только нужные данные, которые нам понадобятся.
+  useLocation перерисовывет ту часть страницы которая использует наш адресс.
+
+
+USE PARAMS - HOOK REACT-ROUTER //
+  <Route path = "/pizza/:id" component = {<FullPizza id = {id}/>}/>
+  id - это ДИНАМИЧЕСКИИ ПАРАМЕТР. После : можно ставить не статичные данные
+
+  path = "/pizza/:id/:category"  =>  "./pizza/12/allCategories";
+
+  const params = useParams();  params - {id: 12, category: 'allCategories'};
+
+
+TRY CATCH IN FETCH IS VERY IMPORTANT !!!
+
+IF YOU WRIGHT "IF" BEFORE "RETURN" AND WILL RETURN SOMETHING INSIDE IT, SECOND RETURN WONT WORK //|
